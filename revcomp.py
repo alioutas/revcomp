@@ -1,5 +1,13 @@
 import streamlit as st
 
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
+
 # # Make a function that will reverse complement a DNA sequence
 def revcomp(seq):
     # check if seq is a DNA sequence, must contain only A, T, C, G and N
@@ -16,6 +24,8 @@ def revcomp(seq):
     return seq
 
 st.title('Reverse Complement DNA Sequence')
+st.markdown('###### by Antonios Lioutas')
+st.markdown('---')
 
 # Get the DNA sequence from the user
 seq = st.text_input('Enter your DNA sequence')
