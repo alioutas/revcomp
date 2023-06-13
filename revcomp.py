@@ -33,7 +33,8 @@ else:
     st.error("Invalid input. Please enter a valid DNA or RNA sequence.")
 
 if input_type is not None:
-    st.write(f"Input sequence is {input_type}")
+    length = len(input_sequence)
+    st.write(f"Input sequence is {input_type} and has {length} bases.")
     st.markdown('---')
 
     # Allow user to choose output type (DNA or RNA)
