@@ -34,7 +34,8 @@ else:
 
 if input_type is not None:
     length = len(input_sequence)
-    st.write(f"Input sequence is {input_type} and has {length} bases.")
+    st.write(f"Input sequence is {input_type}.")
+    st.write(f"{length} bases long.")
     st.markdown('---')
 
     # Allow user to choose output type (DNA or RNA)
