@@ -21,7 +21,7 @@ st.title('Reverse Complement DNA/RNA Sequence')
 st.caption('by Antonios Lioutas')
 st.markdown('---')
 
-input_sequence = st.text_input("Enter your DNA or RNA sequence")
+input_sequence = st.text_input("Enter your DNA or RNA sequence").upper()
 
 # Determine if input is DNA or RNA
 if all(base in 'ATGCN' for base in input_sequence):
