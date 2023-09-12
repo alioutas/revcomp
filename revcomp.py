@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit.components.v1 import html
+import streamlit.components.v1 as components
 
 hide_menu = """
 <style>
@@ -57,16 +57,6 @@ if input_type is not None:
         st.subheader(reverse_complement_sequence)
 
 
-# Define your javascript
-my_js = """
-type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alioutas" data-color="#40DCA5" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" 
-"""
-
-# Wrapt the javascript as html code
-my_html = f"<script>{my_js}</script>"
-
-# Execute your app
-st.title("Javascript example")
-html(my_html)
-
-#<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alioutas" data-color="#40DCA5" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+components.html('''
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alioutas" data-color="#40DCA5" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+''')
