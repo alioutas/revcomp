@@ -8,7 +8,7 @@ footer {visibility: hidden;}
 </style>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
-st.components.v1.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=200, height=200, scrolling=False)
+st.components.v1.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=10, height=10, scrolling=False)
 
 
 
