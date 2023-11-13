@@ -9,15 +9,8 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-def inject_meta_tag():
-    # Define the meta tag string
-    meta_tag = '<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />'
+components.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=200, height=200)
 
-    # Inject the meta tag into the head of the HTML
-    components.html(f"<head>{meta_tag}</head>", height=0, width=0)
-
-# Call the function to inject the meta tag
-inject_meta_tag()
 
 def reverse_complement(sequence, molecule):
     if molecule == "DNA":
