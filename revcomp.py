@@ -9,7 +9,7 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-components.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=200, height=200)
+st.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=200, height=200)
 
 
 def reverse_complement(sequence, molecule):
