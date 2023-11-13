@@ -8,8 +8,8 @@ footer {visibility: hidden;}
 </style>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
+st.components.v1.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=200, height=200, scrolling=False)
 
-st.html('<meta name="google-site-verification" content="4Q0FVMLL8ZaCvpDpmM8qt1W2jvuyEFuoMOqt6p5HlZo" />', width=200, height=200)
 
 
 def reverse_complement(sequence, molecule):
