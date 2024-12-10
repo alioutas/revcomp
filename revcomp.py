@@ -24,7 +24,9 @@ def reverse_complement(sequence, molecule):
 
 st.title('Reverse Complement DNA/RNA Sequence')
 st.caption('by Antonios Lioutas')
-st.markdown('---')
+components.html('''
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alioutas" data-color="#808080" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+''')
 
 input_sequence = st.text_input("Enter your DNA or RNA sequence").upper()
 
@@ -64,8 +66,4 @@ if input_type is not None:
             pyperclip.copy(reverse_complement_sequence)
             st.write("Sequence copied to clipboard!")
 
-st.markdown('---')
 
-components.html('''
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="alioutas" data-color="#808080" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-''')
