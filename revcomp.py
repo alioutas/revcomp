@@ -1,7 +1,5 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import pyperclip
-
 
 hide_menu = """
 <style>
@@ -60,10 +58,7 @@ if input_type is not None:
     if input_sequence:
         reverse_complement_sequence = reverse_complement(input_sequence, output_type)
         st.write(f"Reverse complement {output_type} sequence:")
-        st.subheader(reverse_complement_sequence)
-        
-        if st.button("Copy sequence"):
-            pyperclip.copy(reverse_complement_sequence)
-            st.write("Sequence copied to clipboard!")
+        st.markdown(reverse_complement_sequence)
+
 
 
