@@ -58,7 +58,6 @@ if input_type is not None:
     if input_sequence:
         reverse_complement_sequence = reverse_complement(input_sequence, output_type)
         st.write(f"Reverse complement {output_type} sequence:")
-        # st.markdown(reverse_complement_sequence)
         st.code(reverse_complement_sequence, language="python")
 
 
